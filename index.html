@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festive Greeting Card Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="branding">
+      <h2>EBRAHIM</h2>
+    </div>
+    <div class="header-content">
+      <h1>🎄 Greeting Card Generator</h1>
+      <p>Create and share your personalized holiday cheer!</p>
+    </div>
+  </header>
+  
+  <main class="card-generator">
+    <div class="card-preview">
+      <div class="card" id="card">
+        <h2 id="card-title">Happy Holidays!</h2>
+        <p id="card-message">Wishing you a season filled with joy and magic! ✨</p>
+        <button class="cta" id="cta">Your Call-to-Action</button>
+      </div>
+    </div>
+
+    <form class="card-form">
+      <label>
+        Title:
+        <input type="text" id="title-input" placeholder="e.g., Merry Christmas!">
+      </label>
+      <label>
+        Message:
+        <textarea id="message-input" placeholder="Write your festive message here..."></textarea>
+      </label>
+      <label>
+        Button Text:
+        <input type="text" id="cta-input" placeholder="e.g., View More">
+      </label>
+      <label>
+        Email Recipients (up to 3, separated by commas):
+        <input type="email" id="email-input" placeholder="e.g., email@example.com, email2@example.com">
+      </label>
+      <button type="button" id="send-email-btn">Send as Email</button>
+      <button type="button" id="download-btn">Download Card</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>Follow me on all social media: <strong>ebrahim_oat</strong></p>
+    <p>© 2024 Greeting Card Generator. Designed with ❤️ for the holidays.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
